@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% for instrument in instruments %}
+    <div class="container bg-light rounded" style="margin-top:5px;"><img src="/static/{{ instrument }}.png" alt="{{ instrument }}" width="40px" height="40px">
+    <a href="/separated/htdemucs/{{file}}/{{instrument}}.mp3"> POBIERZ </a>
+    </div>
+{% endfor %}
+
+{% endblock %}

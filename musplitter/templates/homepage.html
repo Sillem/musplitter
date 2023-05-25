@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<span class="text-light">Wybierz plik .mp3, który chcesz rozdzielić na pojedyncze ścieżki. Resztę zostaw nam &#128527;</span>
+          <form method=post enctype=multipart/form-data>
+            <input type="file" class="form-control" id="customFile" name="file"/>
+            <input type=submit value=Upload>
+          </form>
+{% endblock %}
